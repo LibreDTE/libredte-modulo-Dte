@@ -224,7 +224,7 @@ class Controller_Contribuyentes extends \Controller_App
             'comunas' => (new \sowerphp\app\Sistema\General\DivisionGeopolitica\Model_Comunas())->getList(),
             'impuestos_adicionales' => $impuestos_adicionales,
             'impuestos_adicionales_tasa' => $impuestos_adicionales_tasa,
-            'cuentas' => (new \website\Lce\Model_LceCuentas())->setContribuyente($Contribuyente)->getList(),
+            'cuentas' => [],
             'titulo' => 'Modificar empresa '.$Contribuyente->razon_social,
             'descripcion' => 'Aquí podrá modificar los datos de la empresa '.$Contribuyente->razon_social.' RUT '.num($Contribuyente->rut).'-'.$Contribuyente->dv.', para la cual usted es el usuario administrador.',
             'form_id' => 'modificarContribuyente',
